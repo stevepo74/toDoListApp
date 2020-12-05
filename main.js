@@ -3,6 +3,7 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function() {
+  clickedWhenBlank();
   var paragraph = document.createElement('p')
   paragraph.classList.add('paragraph-styling')
   paragraph.innerText = inputField.value;
@@ -15,3 +16,9 @@ addToDoButton.addEventListener('click', function() {
     toDoContainer.removeChild(paragraph);
    })
 })
+
+function clickedWhenBlank() {
+  if (inputField.value == "") {
+    return alert ('Please enter text.');
+  }
+}
