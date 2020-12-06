@@ -10,6 +10,7 @@ html, body {
 
 h1 {
   text-align: center;
+  padding-top: 17px;
 }
 
 #inputField {
